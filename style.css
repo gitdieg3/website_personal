@@ -1,0 +1,350 @@
+/* Google Font Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  scroll-behavior: smooth;
+}
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  transition: all 0.4s ease;
+}
+nav.sticky{
+  padding: 15px 20px;
+  background: #000000;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+nav .nav-content{
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo a{
+  font-weight: 500;
+  font-size: 35px;
+  color: #4070f4;
+}
+nav.sticky .logo a{
+  color: #fff;
+}
+.nav-content .nav-links{
+  display: flex;
+}
+.nav-content .nav-links li{
+  list-style: none;
+  margin: 0 8px;
+}
+ .nav-links li a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 4px;
+  transition: all 0.3s ease;
+}
+ .nav-links li a:hover{
+   color: #4070f4;
+ }
+ nav.sticky .nav-links li a{
+   color: #fff;
+   transition: all 0.4s ease;
+}
+ nav.sticky .nav-links li a:hover{
+  color: #0067dc;
+}
+
+section .home{
+  height: 100vh;
+  width: 100%;
+  padding: 99px 0;
+  background-image: url(HD\ wallpaper_\ byrotek\,\ digital\,\ black\ holes\,\ astronaut\,\ space\,\ cadet.jfif);
+}
+.home{
+  width: auto;
+  max-width: 105%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+
+
+section .about{
+  height: 100vh;
+  width: 100%;
+  padding: 99px 0;
+  background: #ddd;
+  display: flex;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.pic{
+  position: static;
+  height: auto;
+  width:  305px;
+  border-radius: 15px 50px;
+  border-color: #0030f1;
+  box-shadow: 2px 2px 2px 2px;
+}
+.about{
+  width: auto;
+  max-width: 105%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  font-display: flex;
+  width: 540px;
+}
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+span{
+  color: #4070f4;
+  font-size: 30px;
+}
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data{
+  margin-top: 30px;
+}
+.hire{
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.hire:hover{
+  background: #000;
+  border: 1px solid #002D62;
+}
+@media (max-width: 900px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+
+section .social {
+  height: auto;
+  width: 100%;
+  padding: 99px 0;
+  background: url(HD\ wallpaper_\ byrotek\,\ digital\,\ black\ holes\,\ astronaut\,\ space\,\ cadet.jfif); 
+}
+.content{
+  background-color: #e4e1e9;
+}
+.cards{
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+.cards h2.header{
+  color: #254ce7;
+  font-size: 40px;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.services{
+  display: flex;
+  align-items: center;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  transition: all .3s ease;
+}
+.content .fab{
+  font-size: 70px;
+  margin: 16px 0;
+}
+.content > *{
+  flex: 1 1 100%;
+}
+.content:hover{
+  color: white;
+}
+.content:hover a{
+  border-color: white;
+  background: white;
+}
+.content-1:hover{
+  border-color: #1DA1F2;
+  background: #1DA1F2;
+}
+.content-1:hover a{
+  color: #1DA1F2;
+}
+.content-2:hover{
+  border-color: #E1306C;
+  background: #E1306C;
+}
+.content-2:hover a{
+  color: #E1306C;
+}
+.content-3:hover{
+  border-color: #ff0000;
+  background: #ff0000;
+}
+.content-3:hover a{
+  color: #ff0000;
+}
+.content h2{
+  font-size: 30px;
+  margin: 16px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.content p{
+  font-size: 17px;
+  font-family: 'Poppins',sans-serif;
+}
+.content a{
+  margin: 22px 0;
+  background: black;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 15px 0;
+  border-radius: 25px;
+  transition: .3s ease;
+}
+.content a:hover{
+  border-radius: 4px;
+}
+@media (max-width: 900px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+section .pro {
+  height: auto;
+  width: 100%;
+  padding: 99px 0;
+  background-color: #dbd6d6;
+}
+
+.pro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.timeline {
+  display: flex;
+  flex-direction: column;
+  width: 150%;
+  max-width: 600px;
+  
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.timeline-content {
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+.timeline-item:hover{
+  border-color: #E1306C;
+  background: #E1306C;
+  border-radius: 12px;
+  transform: scale(1.1);
+  transition: 0.5s;
+  font-display: auto;
+}
+
+@media (max-width: 900px) {
+  .timeline {
+      flex-direction: column;
+      display: flex;
+      text-align: center;
+  }
+
+  .timeline-content {
+      flex-basis: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
